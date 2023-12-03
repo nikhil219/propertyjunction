@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-bottom:1px solid grey ;
+  }
+  .logo {
+    position: relative;
+    left: 12rem;
+    top: 10px;
+  }
+  .content {
+    position: relative;
+    left: 45rem;
+    top: 10px;
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: grey;
+  }
+  a:hover {
+    color: black;
+    font-size:large;
+    border-bottom: 2px solid red;
+    animation: slideAnimation 5s forwards;
+  }
+  @keyframes borderAnimation {
+    to {
+      padding-bottom: 10px; /* Final border-bottom height on hover */
+    }
+  }
+  a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: -100px;
+    background-color: red;
+    /* animation: slideAnimation 2s ease-in-out forwards; */
+    /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes slideAnimation {
+      0% {
+          opacity: 0.7;
+          border-bottom-width: 2px;
+          transform: translateX(0px);
+      }
+  
+      38% {
+          width: 20%;
+          opacity: 0.9;
+          transform: translateX(20);
+      }
+  
+      55%
+      {
+          width: 30%;
+          opacity: 1;
+          transform: translateX(30);
+      } 72%{
+          width: 50%;
+          opacity: 1;
+          transform: translateX(30);
+      } 81%{
+          width: 70%;
+          opacity: 1;
+          transform: translateX(30);
+      }90%, 95%, 100% {
+          width: 100%;
+          opacity: 1;
+          transform: translateX(30);
+      }
+  }
+  
+  
