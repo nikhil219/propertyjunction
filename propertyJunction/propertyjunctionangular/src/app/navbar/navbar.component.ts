@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Directive, HostListener, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  constructor(public elementRef: ElementRef) { }
+  junctionMoved(){
+    this.elementRef.nativeElement.classList.add();
+  }
 
 }

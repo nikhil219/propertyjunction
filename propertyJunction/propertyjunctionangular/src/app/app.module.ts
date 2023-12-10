@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
+import { MiddleSectionComponent } from './middle-section/middle-section.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
     NavbarComponent,
     FooterComponent,
     ProjectsComponent,
-    FeedbackPageComponent
+    FeedbackPageComponent,
+    MiddleSectionComponent
   ],
   imports: [
     BrowserModule,
